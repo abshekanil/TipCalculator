@@ -45,6 +45,10 @@ button{
     margin-top: 1rem;
     margin-left: 5%;
     transition: 0.6s;
+    border-radius: 5px;
+}
+#reset{
+    background-color: red;
 }
 .total{
     margin-left: 5%;

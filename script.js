@@ -2,6 +2,7 @@ let billInput = document.getElementById('billAmt');
 let tipPercentageInput = document.getElementById('tipPercentage');
 let calculateBtn = document.getElementById('calculateBtn');
 let displayTotal = document.getElementById('total');
+let resetBtn = document.getElementById('reset');
 
 function calculation(){
     let billValue = parseFloat(billInput.value);
@@ -12,4 +13,10 @@ function calculation(){
     console.log(totalAmt);
 }
  calculateBtn.addEventListener("click",calculation);
+ 
+ resetBtn.addEventListener("click", function(){
+    billInput.value = "";
+    tipPercentageInput.value = "";
+    displayTotal.innerHTML = "";
+ })
  
